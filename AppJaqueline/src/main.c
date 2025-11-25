@@ -126,7 +126,7 @@ void main(void)
         printf("      ");
 
 
-        LOG_INF("------------------------");
+        LOG_INF("----------------------------");
         /* --- MAGNETÔMETRO (NOVO!) --- */
         uint8_t mag_raw[6];
         bno_read(i2c, REG_MAG_DATA_LSB, mag_raw, 6);
@@ -136,7 +136,7 @@ void main(void)
         int16_t mz = (mag_raw[5] << 8) | mag_raw[4];
         printf("      ");
         LOG_INF("Magnetometro - X=%d, Y=%d, Z=%d", mx, my, mz);
-        printf("      ");
+        printf("       ");
 
         LOG_INF("------------------------");
         /* --- TEMPERATURA --- */
